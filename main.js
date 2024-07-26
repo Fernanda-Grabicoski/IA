@@ -44,5 +44,12 @@ const perguntas = [
 
 
 function mostrapergunta(){
-
+if(atual >=perguntas.length){
+mostraResultado();
+return;
+}
+ perguntaAtual= perguntas[atual];
+ caixaPerguntas.textContent= perguntaAtual.enunciado;
+caixaAlternativas.textContent="";
+mostraAlternativas();
 }
